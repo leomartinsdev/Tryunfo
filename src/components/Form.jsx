@@ -97,15 +97,15 @@ export default class Form extends Component {
             </select>
           </label>
 
-          <label htmlFor="trunfo-input">
+          <label htmlFor="cardTrunfo">
             Super Trunfo
             <input
               type="checkbox"
-              name="trunfo-input"
-              id="trunfo-input"
+              name="cardTrunfo"
+              id="cardTrunfo"
               data-testid="trunfo-input"
-              checked={ cardTrunfo }
               onChange={ onInputChange }
+              checked={ cardTrunfo }
             />
           </label>
 
@@ -133,8 +133,9 @@ Form.propTypes = ({
   cardAttr2: PropTypes.string,
   cardAttr3: PropTypes.string,
   cardImage: PropTypes.string,
-  cardRare: PropTypes.bool,
+  cardRare: PropTypes.string,
   cardTrunfo: PropTypes.bool,
+  hasTrunfo: PropTypes.bool,
   isSaveButtonDisabled: PropTypes.bool,
   onInputChange: PropTypes.func,
   onSaveButtonClick: PropTypes.func,
