@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './style.css';
+import './card.css';
 
 export default class Card extends Component {
   render() {
@@ -8,7 +8,7 @@ export default class Card extends Component {
       cardAttr2, cardAttr3, cardImage, cardRare, cardTrunfo } = this.props;
 
     return (
-      <div>
+      <div className="card-div glass-effect">
         <p data-testid="name-card">{ cardName }</p>
         <img
           src={ cardImage }

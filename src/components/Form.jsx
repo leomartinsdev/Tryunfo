@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './Form.css';
 
 export default class Form extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class Form extends Component {
       cardAttr2, cardAttr3, cardImage, cardRare, cardTrunfo,
       isSaveButtonDisabled, onInputChange, onSaveButtonClick, hasTrunfo } = this.props;
     return (
-      <div>
+      <div className="form-div glass-effect">
         <form>
           <label htmlFor="cardName">
             Nome:
@@ -26,7 +27,7 @@ export default class Form extends Component {
             <textarea
               name="cardDescription"
               id="cardDescription"
-              cols="30"
+              cols="22"
               rows="10"
               data-testid="description-input"
               value={ cardDescription }
@@ -96,6 +97,8 @@ export default class Form extends Component {
               <option value="muito raro">muito raro</option>
             </select>
           </label>
+
+          <br />
 
           {
             hasTrunfo === false ? (

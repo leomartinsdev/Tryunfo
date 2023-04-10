@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+
+.flex-container {
+  align-items: center;
+  background-image: url('https://img.freepik.com/free-photo/bloody-grunge-background-ideal-halloween_1048-14641.jpg?w=1060&t=st=1681156462~exp=1681157062~hmac=1c26b0bc2d5539d9c161787233475dcf4d6abc7847d65fd5da1a1dc25088806b');
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+

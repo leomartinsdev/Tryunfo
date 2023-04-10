@@ -1,0 +1,27 @@
+.glass-effect {
+  backdrop-filter: blur(20px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 32px;
+  box-shadow: 0 8px 21px 0 rgba(0, 0, 0, 0.37);
+
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+  margin: 10px;
+  max-width: 200px;
+  padding: 30px;
+}
+
+label, input, option, textarea {
+  color: white;
+  text-align: center;
+}
+
+label text {
+  text-align: end;
+}
