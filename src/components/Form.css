@@ -17,11 +17,24 @@
   padding: 30px;
 }
 
-label, input, option, textarea {
+label {
   color: white;
   text-align: center;
 }
 
-label text {
-  text-align: end;
+input, option, textarea {
+  background: rgba(255, 255, 255, 0.01);
+  border: 2px solid rgba(255, 255, 255, 0.158);
+  color: rgb(238, 229, 229);
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+select {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  margin: 5px;
+  opacity: 70%;
 }
